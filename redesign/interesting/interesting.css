@@ -1,0 +1,23 @@
+body.interesting main ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+body.interesting main li {
+    border-bottom: 1px dotted var(--font-color);
+    padding: 10px 0;
+}
+
+body.interesting main li:last-child {
+    border-bottom: 0;
+}
+
+body.interesting main li img {
+    padding: 0 5px;
+    width: 20px;
+}
+
+body.interesting main li span.spacer {
+    display: inline-block;
+    width: 30px;
+}

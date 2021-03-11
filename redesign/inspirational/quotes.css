@@ -1,0 +1,53 @@
+.theme-light {
+    --quote_background: hsla(0, 0%, 90%, 0.8);
+    --quote_quote_color: hsla(0, 0%, 20%, 1.0);
+    --quote_attr_color: hsla(0, 0%, 20%, 0.6);
+}
+
+.theme-dark {
+    --quote_background: hsla(0, 0%, 20%, 0.8);
+    --quote_quote_color: hsla(0, 0%, 80%, 1.0);
+    --quote_attr_color: hsla(0, 0%, 100%, 0.6);
+}
+
+main ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+main ul li {
+    font-family: Garamond,Baskerville,Baskerville Old Face,Hoefler Text,Times New Roman,serif; 
+    /*color: var(--font-color);*/
+    color: var(--font-color);
+    font-size: 1.5em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    background-color: var(--quote_background);
+    border-radius: 15px;
+    padding: 20px 50px;
+    position: relative;
+}
+
+main .quote {
+    position: absolute;
+    font-size: 5em;
+    color: var(--quote_quote_color);
+    z-index: -1;
+}
+
+main .lquote {
+    position: absolute;
+    top: -40px;
+    left: 0px;
+}
+
+main .rquote {
+    bottom: -40px;
+    right: 0px;
+}
+
+main .attribution {
+    font-style: italic;
+    color: var(--quote_attr_color);
+    text-align: right;
+}
