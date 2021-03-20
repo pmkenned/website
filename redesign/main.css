@@ -1,15 +1,34 @@
 .theme-light {
-    --color-secondary: white;
+    --body-color: hsl(0, 0%, 95%);
+    --header-color:
+        linear-gradient(
+            120deg,
+            hsl(210,76%,30%) 0%,
+            hsl(150,70%,30%) 100%
+        );
+    --footer-color: white;
+    --footer-border-color: hsl(0, 0%, 85%);
     --font-color: black;
-    --tab-color: #eee;
+    --tab-color: hsla(180, 50%, 50%, 0.5);
+    --tab-border-color: hsla(180, 50%, 50%, 0.5);
+    --tab-sep-color: hsla(180, 50%, 60%, 0.5);
     --link-color: blue;
 }
 
 .theme-dark {
-    --color-secondary: hsl(0, 0%, 10%);
+    --body-color: hsl(0, 0%, 10%);
+    --header-color: hsl(0, 0%, 7%);
+    --footer-color: hsl(0, 0%, 7%);
+    --footer-border-color: hsl(0, 0%, 20%);
     --font-color: hsl(0, 0%, 90%);
-    --tab-color: #444;
+    --tab-color: hsla(180, 0%, 50%, 0.5);
+    --tab-border-color: hsla(180, 0%, 40%, 0.5);
+    --tab-sep-color: hsla(180, 0%, 60%, 0.5);
     --link-color: lightblue;
+}
+
+.top {
+        background: var(--header-color);
 }
 
 button {
@@ -19,16 +38,22 @@ button {
 }
 
 body {
-    background: var(--color-secondary);
+    padding: 0;
+    margin: 0;
+    background: var(--body-color);
     color: var(--font-color);
 
     /*font-family: Arial;*/
     font-family: 'Roboto', sans-serif;
+
+    line-height: 1.4;
+}
+
+main {
     width: 90%;
     max-width: 700px;
     margin: auto;
-
-    line-height: 1.4;
+    min-height: 80vh;
 }
 
 a:link, a:visited {
@@ -49,17 +74,22 @@ header {
 }
 
 h1 {
+    /*font-variant-caps: all-small-caps;*/
+    margin: 0;
+    padding: 1em;
     font-style: italic;
-    font-size: 2em;
+    font-size: 3em;
     text-align: center;
+    color: white;
+
 }
 
 nav {
     text-align: center;
-    margin: 1em 0;
+    margin: 0 0;
     padding: 6px 0;
-    border-top: 1px solid var(--font-color);
-    border-bottom: 1px solid var(--font-color);
+/*    border-top: 1px solid var(--font-color);*/
+    /*border-bottom: 3px solid var(--font-color);*/
 }
 
 nav ul {
@@ -100,12 +130,13 @@ nav li:nth-child(9):hover { background: hsl(150, 90%, 80%); }
 nav li a:link, nav li a:visited {
     text-decoration: none;
     color: var(--font-color);
+    color:white; /* TODO: use them */
     font-weight: bold;
     display: inline-block;
     padding: 5px 8px;
     margin: 0 0;
     transition: 50ms linear;
-    border-right: 1px dotted black;
+    border-right: 1px solid var(--tab-sep-color);
 }
 
 nav li:last-child a:link {
@@ -129,7 +160,7 @@ nav li a:hover, nav li a:focus {
 .beautiful          a.beautiful     ,
 .about              a.about         {
     background: var(--tab-color);
-    border-bottom: 4px solid #888;
+    border-bottom: 4px solid var(--tab-border-color);
     /*color: white;*/
     /*text-shadow: 0px 0px 8px black;*/
 }
@@ -144,6 +175,19 @@ nav li a:hover, nav li a:focus {
 .beautiful          a.beautiful     { border-bottom: 4px solid hsl(30,  90%, 60%); }
 .about              a.about         { border-bottom: 4px solid hsl(90,  90%, 60%); }
 */
+
+footer {
+    background: var(--footer-color);
+    border-top: 1px solid var(--footer-border-color);
+    padding-top: 1.5rem;
+    padding-bottom: 10vh;
+}
+
+.bottom {
+    width: 90%;
+    max-width: 700px;
+    margin: auto;
+}
 
 footer div.socialLinks {
     float: right;

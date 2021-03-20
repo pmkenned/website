@@ -2,6 +2,7 @@
 
 |Description                                                |Status  |Category|Hours|
 |-----------------------------------------------------------|--------|--------|-----|
+| RSS                                                       |        |        |     |
 | Clean up CSS                                              |        |        |     |
 | Add log in                                                |        |        |     |
 | Add comment system?                                       |        |        |     |
@@ -12,4 +13,13 @@
 | Add dynamic table of contents?                            |        |        |     |
 | Add transparency to YouTube icon                          |        |        |     |
 | Create system for drafts of blog posts                    |        |        |     |
-|                                                           |        |        |     |
+
+## Blog Post Ideas
+
+- Axiological Powers of 10
+- Focus on what you can control
+- Life's Hourglass
+- Function Length
+- Life from First Principles
+- Hierarchy of Needs
+- Status

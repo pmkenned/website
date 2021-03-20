@@ -19,6 +19,8 @@ if (isset($additionalCSSFiles) and count($additionalCSSFiles) > 0) {
 
 <body <?php if (!empty($bodyClass)) { echo "class=\"$bodyClass\""; } ?>>
 
+<section class="top">
+
 <header>
 <button>Log in</button>
 <!--
@@ -32,7 +34,7 @@ if (isset($additionalCSSFiles) and count($additionalCSSFiles) > 0) {
 
 </header>
 
-<h1>PAUL KENNEDY</h1>
+<h1>Paul Kennedy</h1>
 
 <nav>
     <ul>
@@ -94,3 +96,5 @@ echo "\n";
 ?>
     </ul>
 </nav>
+
+</section>

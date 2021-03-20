@@ -1,5 +1,6 @@
 <footer>
-<hr />
+
+<section class="bottom">
 
 <a href="https://www.instagram.com/paulkennedy390/"><div class="socialLinks" id="ig"></div></a>
 <a href="https://www.youtube.com/channel/UC_AXcJVAMEHzsMQ1RhMaVlw"><div class="socialLinks" id="yt"></div></a>
@@ -9,6 +10,8 @@
 
 Paul Kennedy<br />
 <a href="/redesign/contact.php">Contact</a><br />
+
+</section>
 
 </footer>
 
